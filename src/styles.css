@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+body{
+  text-align: center;
+  height:100vh;
+  width:100vw;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#rules{
+  display: flex;
+  font-size: 12px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.rule{
+  max-width:  100px;
+  border: 1px solid orchid;
+  border-radius: 0.5em;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0px 5px .5em .1em #f5f2f2;
+
+}
+
+#grid {
+  display: inline-grid;
+  grid-template-columns: repeat(9,auto);
+  width: fit-content;
+  padding:4px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+}
+
+.grid-cell{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", cursive;
+  width:50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 2px;
+  background-color: rgba(38, 151, 146, 0.904);
+}
+.grid-cell:hover{
+  background-color: #ff6500;
+}
+
+.flag{
+  background-color: grey;
+  
+}
+
+.flag:hover{
+  
+  background-color: grey;
+}
+
+#flags-left{
+  margin: 30px;
+  font-size: 25px;
+}
+
+.checked {
+  background-color: green;
+}
+button{
+  font-family: 'Roboto', sans-serif;
+  padding:10px 25px 10px 25px;
+  background-color: #ff2600;
+  color: whitesmoke;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  cursor:pointer;
+  margin: 30px;
+  background-color: rgba(38, 151, 146, 0.904);
+}
+
+button:hover{
+  background-color: rgb(235, 129, 8);
+  color:white;
+  transform: scale(1.1);
+}
+
+#result {
+  margin: 15px;
+  font-size: 25px;
+  color: #e76346;
+}
+#reset{
+  display: none;
+}
+
